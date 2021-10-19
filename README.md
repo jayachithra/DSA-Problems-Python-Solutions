@@ -1,2 +1,4 @@
 # DSA-Python-Leetcode-Questions
-Repo with my solutions for all the DSA based leetcode questions that I have solved so far.
+Repo with my solutions for all the DSA based leetcode questions that I have solved so far. 
+
+- All solutions are in Python
