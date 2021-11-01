@@ -36,9 +36,9 @@
 
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
-        # richest = -1
-        # for i in accounts:
-        #     richest = max(richest, sum(i))        
-        # return richest
+        richest = -1
+        for i in accounts:
+            richest = max(richest, sum(i))        
+        return richest
         
-        return max([sum(i) for i in accounts])
+        # return max([sum(i) for i in accounts])
