@@ -27,8 +27,8 @@
 # FJ can put his 3 cows in the stalls at positions 1, 4 and 8,
 # resulting in a minimum distance of 3.
 
-
-def aggCows(N, C, NLoc):
+# Binary search 
+def aggCowsSearch(N, C, NLoc):
     # Search space is the number of minimum and maximum possible distances within the given slots
     start = 1
     end = max(NLoc) - min(NLoc)
@@ -45,6 +45,7 @@ def aggCows(N, C, NLoc):
         
     return lastallocated
             
+# Method to check allocation of cows
 def allocateCows(NLoc, mid, C):
     cowsallocated = 0
     prevallocatedspot = 0
@@ -63,6 +64,6 @@ def allocateCows(NLoc, mid, C):
     
 # TEST CASES HERE
 if __name__=="__main__":
-    # print(aggCows(5, 3, [1, 2, 4, 8, 9]))
-    print(aggCows(5, 3, [1, 2, 4, 5, 6]))
+    # print(aggCowsSearch(5, 3, [1, 2, 4, 8, 9]))
+    print(aggCowsSearch(5, 3, [1, 2, 4, 5, 6]))
     
